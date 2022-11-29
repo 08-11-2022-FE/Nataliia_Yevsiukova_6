@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_6</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <form class="form" action="#">
+          <fieldset>
+            <legend>Особисті данні</legend>
+            <label for="name">Повне ім'я</label>
+            <input type="text" name="name" id="name" placeholder="Введіть ваше ПІБ" autocomplete="on" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required pattern="+380 [0-9] {9}" />
+            <label for="tel">Телефон в форматі 80xxxxxxxxx</label>
+            <input type="tel" id="tel" name="tel" />
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="" />
+            <label for="password2">Пароль ще раз</label>
+            <input type="password2" name="password" id="password" placeholder="" />
+            <fieldset>
+              <legend>Стать</legend>
+              <label for="female">Жіноча</label>
+              <input type="radio" name="sex" id="female" />
+              <label for="male">Чоловіча</label>
+              <input type="radio" name="sex" id="male" />
+            </fieldset>
+            <label for="age">Вік</label>
+            <input type="number" name="age" id="age" />
+            <label for="adress">Повна адреса</label>
+            <textarea
+              name="adress"
+              id="adress"
+              cols="30"
+              rows="10"
+              placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Данні про курс</legend>
+            <label for="select-course">Курс</label>
+            <select name="select-course" id="select-course">
+              <option value="qa">QA Manual</option>
+              <option value="ui-ux">UI/UX</option>
+              <option value="front-end" selected>Front-End</option>
+            </select>
+            <label for="date">Бажана дата початку курсу</label>
+            <input type="date" id="date" name="date" />
+            <label for="level">Оцініть Ваш початковий рівень знань </label>
+            <input type="range" id="level" name="level" />
+            <label for="foto">Загрузіть своє фото</label>
+            <input type="file" id="foto" name="foto" />
+          </fieldset>
+          <!--якщо я використовую fieldset, чи обовязково мають всі елементи поміщатись в нього, чи деякі можуть залишатись поза нього?-->
+          <input type="checkbox" id="agree" name="agree" />
+          <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+          <button type="reset">Очистити форму</button>
+          <button type="submit">Зареєструватися</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
